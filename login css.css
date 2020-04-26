@@ -1,0 +1,19 @@
+body{
+	background-image:url(Lighthouse.jpg);
+	background-size: 100%;
+	background-repeat:no-repeat;
+}
+h1{
+	text-align: center;
+}
+form{
+	border:3px solid black;
+	border-radius:30px;
+	width:300px;
+	padding:15px 15px;
+	position:absolute;
+	margin:100px 630px ;
+}
+.btn{
+	border:1px dashed black;
+}
