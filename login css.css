@@ -2,25 +2,61 @@ body{
 	/*background-image:url(Lighthouse.jpg);
 	background-size: 100% ;
 	background-repeat:no-repeat;*/
-	background-color: #2F2B58;
+	background-image: url(stones.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
 
 }
 h1{
 	text-align: center;
-	color: #F2DEAA;
+	color: rgba(177, 147, 129,0.9);
 }
+
 form{
-	border:3px solid black;
+	border:3px solid white;
 	border-radius:30px;
-	width:300px;
+	width:350px;
 	padding:15px 15px;
 	margin:100px auto;
-	color: #F2DEAA;
+	color:white;
+	transition:background-color 2s ease;
+	background:transparent;
+	font-size: 20px;
+	animation: random 30s infinite;
+}
+@keyframes random{
+	0%  { background-color:rgba(12, 2, 43,0.5); }
+	15% { background-color:rgba(184, 167, 115,0.5); } 
+    30% { background-color:rgba(30, 46, 67,0.5); } 
+    45% { background-color:rgba(170, 184, 0,0.5); } 
+    60% { background-color:rgba(104, 230, 230,0.5); }
+    75% { background-color:rgba(114, 52, 0,0.5); } 
+    100%{ background-color:rgba(170, 184, 0,0.5);  }
+}
+
+.form-control{
+	 background:none;
+	 border:2px solid white;
+	 border-radius:20px;
+	 width: 270px;
+	 height: 30px;
 
 }
-.form-control{
-	 background-color:#2F2B58 ;
-	 border: none;
-	 border-bottom:2px solid white;
+
+.form-check-input{
+	cursor: pointer;
+}
+
+.btn{
+	cursor: pointer;
+	background-color:rgba(0,0,0,0.7);
+	border:none;
+	border-radius:20px;
+	padding-bottom:4px;
+	height: 40px;
+	width:150px;
+	color: white;
+}
+form:hover{
 
 }
